@@ -114,13 +114,14 @@ body {
     text-decoration: none;
     transition-duration: .35s;
     letter-spacing: 3px;
+    text-shadow: 2px 2px 2px #a69278c0;
   }
   .menu__item:hover {
     background-color:#fff;
     color: #c2e1b9cb;
     text-shadow: none;
     text-decoration: none;
-    
+
   }
 
   .menu__item:active {
