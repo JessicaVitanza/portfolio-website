@@ -4,13 +4,22 @@ body {
     padding: 0px;
     width: 100%;
     height: 100%;
-    background-color: rgba(239, 246, 240, 0.774);
     font-family: 'Varela Round', sans-serif;
-    background-color: #bfa5831e;
-    overflow-y: scroll;
-    overflow-x: hidden;
-   
+    background-color: #f7f5f1;
+    overflow: scroll;
+    
+}
 
+.main-container{
+    margin-bottom: -200px;
+    background-color: #C2E1B9;
+    width: 100%;
+    height: 100%;
+}
+
+.main-container2{
+    width: 100%;
+    height: 100%;
 }
 
 .nav-bar {
@@ -23,7 +32,7 @@ body {
     justify-content: center;
     flex-direction: row;
     position: fixed;
-    z-index: 10;
+    z-index: 100;
    
 }
 
@@ -100,6 +109,7 @@ body {
     box-shadow: 4px 4px 10px #563b309c;
     transition-duration: .40s;
     border-radius: 0px 16px 16px 0px;
+    z-index: 20;
 
   }
   .menu__item {
@@ -134,7 +144,63 @@ body {
     width: 200%;
     height: 600px;
     margin-top: 700px;
-  text-align: center;
+  text-align: left;
   margin-left: -15px;
-  margin-bottom: 0px;
+  color: #C2E1B9;
+  background-color: #C2E1B9;
+  padding-bottom: 30px;
+ 
+
+
 }
+
+.page-container2 {
+    width: 100%;
+    height:700px;
+    margin-top: 820px;
+  text-align: left;
+  color: #C2E1B9;
+  overflow: scroll;
+padding-bottom: 20px;
+}
+
+.text{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.terra{
+    width: 300px;
+    z-index: 0;
+}
+
+
+.btn {
+    -webkit-tap-highlight-color: var(--color-transparent);
+    position: fixed;
+    background: #C2E1B9;
+    color: #fff;
+    bottom: 0px;
+    right: 0px;
+    z-index: 2;
+    padding: 1.5rem 1rem 1rem 2rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-radius: 150px 0px 0px 0px;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    -webkit-tap-highlight-color: var(--color-transparent);
+    position: fixed;
+    background: #a69278c0;
+    color: #fff;
+    bottom: 0px;
+    right: 0px;
+    z-index: 2;
+    padding: 1.5rem 1rem 1rem 2rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-radius: 150px 0px 0px 0px;
+    cursor: pointer;
+  }
