@@ -174,11 +174,149 @@ padding-bottom: 20px;
     
 }
 
+.link{
+font-size: 30px;
+text-decoration: none;
+  color: #563b309c;
+}
+
+.linktext{
+  font-size: large;
+    color: #563b309c;
+}
+
+.link:hover{
+  font-size: 28px;
+  text-decoration: none;
+    color: #fff;
+    background-color: #bfa5838f;
+    padding: 5px 10px;
+    border-radius: 16px;
+}
+
+.contatti{
+  display: flex;
+  flex-direction: row;
+  color: #563b309c;
+  justify-content: left;
+  align-items: center;
+ margin-left: 10px;
+}
+
+.contatti-ul{
+  color: #563b309c;
+  margin-left: 80px;
+  line-height: 30px;
+}
+
+.link-contact{
+  color: #563b309c;
+  margin-left: 80px;
+  line-height: 30px;
+  text-decoration: none;
+  margin-left: -5px;
+}
+
+.link-contact:hover{
+padding: 5px;
+border-radius: 16px;
+background-color: #bfa5838f;
+color: #fff;
+}
+
+
+
+.formazione-info{
+  display: flex;
+  flex-direction: row;
+  color: #563b309c;
+  justify-content: left;
+  align-items: center;
+  margin-top: -50px ;
+}
+
+.form-info{
+  margin-left: 70px;
+  width: 300px;
+    z-index: 0;
+}
+
+.chisono{
+  display: flex;
+  flex-direction: row;
+  color: #563b309c;
+  justify-content: left;
+  align-items: center;
+  margin-top: -40px;
+}
+
+.coachpt{
+  display: flex;
+  flex-direction: row;
+  color: #563b309c;
+  justify-content: left;
+  align-items: center;
+  margin-left: 30px;
+  line-height: 30px;
+}
+
+.coachptimg{
+  width: 300px;
+    z-index: 0;
+    margin-left: 60px;
+    margin-top: 40px;
+}
+
+.hobby{
+  display: flex;
+  flex-direction: row;
+  color: #563b309c;
+  justify-content: left;
+  align-items: center;
+  line-height: 30px;
+  margin-bottom: 60px;
+  margin-top: -40px;
+}
 
 .terra{
     width: 300px;
     z-index: 0;
 }
+
+.hobbygarden{
+  width: 300px;
+  z-index: 0;
+  margin-right: 40px ;
+  margin-left: 20px;
+}
+
+.hobbyterra{
+  width: 300px;
+    z-index: 0;
+    margin-left: 40px;
+}
+
+.competenze{
+  display: flex;
+  flex-direction: row;
+  color: #563b309c;
+  justify-content: left;
+  align-items: center;
+  line-height: 30px;
+}
+
+.competenzeimg{
+  width: 300px;
+  z-index: 0;
+  margin-left: -80px;
+  padding-top: 50px;
+}
+
+.lingue{
+  margin-left: 100px;
+  margin-top: -210px;
+}
+
 
 .screenshot{
   width: 900px;
@@ -220,7 +358,7 @@ padding-bottom: 20px;
   .btn:hover {
     -webkit-tap-highlight-color: var(--color-transparent);
     position: fixed;
-    background: #a69278c0;
+    background: #bfa583;
     color: #fff;
     bottom: 0px;
     right: 0px;
