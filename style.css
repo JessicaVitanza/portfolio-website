@@ -157,7 +157,8 @@ body {
 .page-container2 {
     width: 100%;
     height:700px;
-    margin-top: 820px;
+    margin-top: 850px;
+    margin-left: -1390px;
   text-align: left;
   color: #C2E1B9;
   overflow-y: scroll;
@@ -183,15 +184,6 @@ text-decoration: none;
 .linktext{
   font-size: large;
     color: #563b309c;
-}
-
-.link:hover{
-  font-size: 28px;
-  text-decoration: none;
-    color: #fff;
-    background-color: #bfa5838f;
-    padding: 5px 10px;
-    border-radius: 16px;
 }
 
 .contatti{
@@ -318,24 +310,8 @@ color: #fff;
 }
 
 
-.screenshot{
-  width: 900px;
-  margin-left: 30px;
-  margin-bottom: 30px;
-  margin-top: -20px;
-  border-radius: 16px;
-  box-shadow: 5px 6px 8px rgba(0, 0, 0, 0.366);
-}
-
-.qrcode{
-  width: 200px;
-  margin-left: 140px;
-  margin-bottom: 110px;
-}
-
 .nomepagina{
   font-size:40px;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.668);
   font-weight:bolder;
   color: #C2E1B9;
 }
@@ -371,7 +347,17 @@ color: #fff;
     cursor: pointer;
   }
 
-  .screenshot-game{
+
+  /* .screenshot{
+  width: 900px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  margin-top: -20px;
+  border-radius: 16px;
+  box-shadow: 5px 6px 8px rgba(0, 0, 0, 0.366);
+} */
+
+  .screenshot{
     width: 620px;
     margin-left: 30px;
   margin-bottom: 40px;
@@ -379,3 +365,69 @@ color: #fff;
   box-shadow: 5px 6px 8px rgba(0, 0, 0, 0.366);
   margin-top: -20px;
   }
+
+
+body.dark-theme {
+  --text-color: #eee;
+  --bkg-color: #4480338d;
+}
+
+.btn-toggle{
+  border: none;
+  border-radius: 90px;
+  width: 110px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 1280px;
+  background-color: transparent;
+  padding: 0px;
+  
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --text-color: #eee;
+    --bkg-color: #4480338d;
+  }
+  body.light-theme {
+    --text-color: #563b309c;
+    --bkg-color: ;
+  }
+
+}
+
+body {
+  background: var(--bkg-color);
+}
+
+h1, p, span, .link-contact, .nomepagina, li, .link, .linktext {
+  color: var(--text-color);
+}
+
+.sun{
+  padding: 8px;
+  margin-right: 20px;
+  -webkit-border-radius: 90px;
+border-radius: 90px;
+background: #c2e1b9;
+-webkit-box-shadow: 12px 12px 18px #a5bf9d, -12px -12px 18px #dfffd5;
+box-shadow: 12px 12px 18px #a5bf9d, -12px -12px 18px #dfffd5;
+}
+
+.moon{
+  padding: 8px;
+  -webkit-border-radius: 90px;
+border-radius: 90px;
+background: #c2e1b9;
+-webkit-box-shadow: 12px 12px 18px #a5bf9d, -12px -12px 18px #dfffd5;
+box-shadow: 12px 12px 18px #a5bf9d, -12px -12px 18px #dfffd5;
+}
+
+.sun:hover{
+  background-color: white; 
+}
+
+.moon:hover{
+  background-color: white;
+}
+

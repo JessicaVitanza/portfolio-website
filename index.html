@@ -35,21 +35,46 @@
          
          
          </ul>
+
+         
        </div>
- 
+  
      
  <div class="page-container">
-  <iframe src='https://my.spline.design/roomgirlreadingcopy-c372f0d55474b079fa2693a89cd4212c/' frameborder='0' width='120%' height='120%'></iframe>
+  <iframe class="home-img" src='https://my.spline.design/roomgirlreadingcopy-c372f0d55474b079fa2693a89cd4212c/' frameborder='0' width='120%' height='120%'></iframe>
  </div>
 
-
-
-
  </div>
-
+ 
 
    
 </body>
-<script src="./model.js"></script>
-<script src="./main.js"></script>
+<script>
+  const btn = document.querySelector(".btn-toggle");
+const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+const currentTheme = localStorage.getItem("theme");
+if (currentTheme == "dark") {
+document.body.classList.toggle("dark-theme");
+} else if (currentTheme == "light") {
+document.body.classList.toggle("light-theme");
+}
+
+btn.addEventListener("click", function () {
+if (prefersDarkScheme.matches) {
+  document.body.classList.toggle("light-theme");
+  var theme = document.body.classList.contains("light-theme")
+    ? "light"
+    : "dark";
+} else {
+  document.body.classList.toggle("dark-theme");
+  var theme = document.body.classList.contains("dark-theme")
+    ? "dark"
+    : "light";
+}
+localStorage.setItem("theme", theme);
+});
+
+</script>
+
 </html>
