@@ -39,6 +39,7 @@ body {
 
 .hamburger-menu{
     display: block;
+    cursor: pointer;
 }
 
 #menu__toggle {
@@ -163,6 +164,7 @@ body {
   color: #C2E1B9;
   overflow-y: scroll;
 padding-bottom: 20px;
+
 
 }
 
@@ -358,14 +360,13 @@ color: #fff;
 } */
 
   .screenshot{
-    width: 620px;
+    width: 640px;
     margin-left: 30px;
   margin-bottom: 40px;
   border-radius: 16px;
   box-shadow: 5px 6px 8px rgba(0, 0, 0, 0.366);
   margin-top: -20px;
   }
-
 
 body.dark-theme {
   --text-color: #eee;
@@ -375,7 +376,7 @@ body.dark-theme {
 .btn-toggle{
   border: none;
   border-radius: 90px;
-  width: 110px;
+  width: 116px;
   display: flex;
   flex-direction: row;
   margin-left: 1280px;
@@ -400,18 +401,20 @@ body {
   background: var(--bkg-color);
 }
 
-h1, p, span, .link-contact, .nomepagina, li, .link, .linktext {
+h1, p, span, .link-contact, .nomepagina, li, .link, .linktext{
   color: var(--text-color);
 }
 
 .sun{
   padding: 8px;
-  margin-right: 20px;
+  margin-right: 21px;
   -webkit-border-radius: 90px;
 border-radius: 90px;
 background: #c2e1b9;
 -webkit-box-shadow: 12px 12px 18px #a5bf9d, -12px -12px 18px #dfffd5;
 box-shadow: 12px 12px 18px #a5bf9d, -12px -12px 18px #dfffd5;
+border: solid 2px #c2e1b9;
+cursor: pointer;
 }
 
 .moon{
@@ -421,13 +424,21 @@ border-radius: 90px;
 background: #c2e1b9;
 -webkit-box-shadow: 12px 12px 18px #a5bf9d, -12px -12px 18px #dfffd5;
 box-shadow: 12px 12px 18px #a5bf9d, -12px -12px 18px #dfffd5;
+border: solid 2px #c2e1b9;
+cursor: pointer;
 }
 
 .sun:hover{
-  background-color: white; 
+background: linear-gradient(145deg, #afcba7, #d0f1c6);
+box-shadow:  12px 12px 30px #a5bf9d,
+             -16px -16px 60px #d7e9d2;
+ border: solid 2px #c2e1b9;
 }
 
 .moon:hover{
-  background-color: white;
+  background: linear-gradient(145deg, #afcba7, #d0f1c6);
+box-shadow:  12px 12px 30px #a5bf9d,
+             -16px -16px 60px #d7e9d2;
+             border: solid 2px #c2e1b9;
 }
 
