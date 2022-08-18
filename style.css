@@ -6,7 +6,7 @@ body {
     height: 100%;
     font-family: 'Varela Round', sans-serif;
     background-color: #f7f5f1;
-    overflow: scroll;
+    overflow-y: scroll;
     
 }
 
