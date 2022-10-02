@@ -7,7 +7,6 @@ body {
     font-family: 'Varela Round', sans-serif;
     background-color: #f7f5f1;
     overflow-y: scroll;
-    
 }
 
 .main-container{
@@ -142,17 +141,37 @@ body {
   }
 
 .page-container {
-    width: 200%;
-    height: 600px;
-    margin-top: 700px;
-  text-align: left;
-  margin-left: -15px;
-  color: #C2E1B9;
-  background-color: #C2E1B9;
+    width: 100%;
+    margin-top: 750px;
+    padding-left: 50px;
   padding-bottom: 30px;
- 
+  display: flex;
+  flex-direction: row;
+align-content: center;
+align-items: center;
+
+}
+
+.intro-jv{
+  font-size: 30px;
+  font-weight: bolder;
+  line-height: 60px;
+  text-transform: uppercase;
+  color:#563b30ec;
+}
 
 
+
+.index-img {
+  width: 50%;
+}
+
+.index-intro {
+  font-size: 18px;
+  line-height: 40px;
+  font-family: 'Varela Round', sans-serif;
+  margin-left: 60px;
+  text-align: center;
 }
 
 .page-container2 {
@@ -164,7 +183,6 @@ body {
   color: #C2E1B9;
   overflow-y: scroll;
 padding-bottom: 20px;
-
 
 }
 
@@ -233,6 +251,18 @@ color: #fff;
   margin-left: 70px;
   width: 300px;
     z-index: 0;
+}
+
+.div-curriculum {
+  display: flex;
+  justify-content: center;
+}
+
+.curriculum {
+  height: 1300px;
+  border: 6px solid #C2E1B9;
+  margin-top: 26px;
+  
 }
 
 .chisono{
@@ -385,6 +415,16 @@ body.dark-theme {
   
 }
 
+.camping {
+  width: 28%;
+  margin-left: 26px;
+}
+
+.camping-text {
+  margin-left: 30px;
+
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     --text-color: #eee;
@@ -442,3 +482,41 @@ box-shadow:  12px 12px 30px #a5bf9d,
              border: solid 2px #c2e1b9;
 }
 
+
+@media only screen and (max-width: 800px) {
+
+  html, body{
+    width: 100vh;
+    height: 200vh;
+
+  }
+
+  .main-container{
+    display: flex;
+    flex-direction: column;
+
+
+  }
+
+  .page-container{
+
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: -400px;
+
+  }
+
+  .index-intro{
+    display: flex;
+flex-direction: column;
+text-align: left;
+font: medium;
+
+  }
+
+  .intro-jv{
+    font-size: larger;
+  }
+
+
+}
